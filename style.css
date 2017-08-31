@@ -1,0 +1,162 @@
+body{
+	background-image: url("img/volks-background.png");
+	background-color: black;
+	background-attachment: fixed;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Arial;
+	padding-top: 50px;
+}
+
+main{
+	border-style: groove;
+	border-color: #0d4671;
+	border-radius: 5px;
+	background-image: url("img/main-background.png");
+	background-color: #ededed;
+	padding: 10px;
+}
+
+#logo{
+	width:160px;
+	height:160px;
+	vertical-align:bottom
+}
+
+ul {
+	border-radius: 5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0d4671;
+	width :900px;
+}
+li {
+	float: left;
+	border-right: 1px solid #ededed;
+}
+
+#nav-shipping{
+	border-right: none;
+}
+
+#nav-contact{
+	float: right;
+	border-right: none;
+}
+
+li a {
+    display: block;
+    color: #ededed;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #105589;
+}
+
+hr{
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #0d4671;
+    margin: 2em 0;
+}
+
+.slogan{
+	font-size: 50px;
+	color: #ededed;
+}
+
+.price{
+	float: right;
+}
+
+.paymentDetails{
+	float: right;
+}
+
+.col1 {
+	float: left;
+}
+.col2 {
+	float : right;
+}
+
+#wrapper {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.cardType{
+	height: 22px;
+	width: 100%;
+}
+
+.countyList{
+	height: 22px;
+	width: 100%;
+}
+
+.month{
+	height: 22px;
+	width: 48.7%;
+}
+
+.year{
+	height: 22px;
+	width: 48.7%;
+}
+
+.BuyNow{
+	text-align: center;
+}
+
+.content {
+	position: relative;
+    display: inline-block;
+}
+
+.content .contentInfo {
+    visibility: hidden;
+	width: 100%;
+    background-color: #0d4671;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 5px;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+}
+
+.content:hover .contentInfo {
+    visibility: visible;
+}
+
+.navbar{
+	position: fixed;
+	top: 0;
+}
+
+.footer{
+	color: #ededed
+}
+
+#footerLeft{
+	float:left;
+}
+
+#footerRight{
+	float:right;
+}
+
+.contactLinks{
+	color: #0d4671;
+}

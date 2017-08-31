@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<title>Volkswagen Golf GTI</title>
+	</head>
+	
+	<body>
+	
+	<script src="functions.js"></script>
+	
+	<nav class="navbar">
+		<ul>
+			<li><a href="#Product">Product</a></li>
+			<li><a href="#Upgrades">Upgrades</a></li>
+			<li id="nav-shipping"><a href="#Shipping">Shipping</a></li>
+			<li id="nav-contact"><a href="#footerLeft">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<img src="img/Volkswagen-Logo.png" id="logo" alt="Volkswagen Logo">
+	<span class="slogan">
+		Das Auto!
+	</span>
+		
+		
+	<main>
+	
+	<h1 id="Product"> Selection</h1>
+	<p>Golf GTI 2.0 TSI BlueMotion Technology 162 kW (220 HP) 6- speed DSG From &euro;38420</p>
+	Select your colour:
+	<input type="radio" id = "Black" name="colourChoice" value="0" onclick="changeImg(this.value)" checked> Black
+	<input type="radio" id = "Blue" name="colourChoice" value="1" onclick="changeImg(this.value)"> Blue
+	<input type="radio" id = "Grey" name="colourChoice" value="2" onclick="changeImg(this.value)"> Grey
+	<input type="radio" id = "Red" name="colourChoice" value="3" onclick="changeImg(this.value)"> Red
+	<input type="radio" id = "White" name="colourChoice" value="4" onclick="changeImg(this.value)"> White
+
+	<img id="displayImg" src="img/Golf-Black.png" alt="">
+	
+	<h1 id="Upgrades"> Upgrades</h1>
+	
+	<input type="checkbox" name="upgrade" id="parkAssist" onclick="parkAssist()"> 
+		<div class="content">Parallel Park Assist incl. Park Distance Control 
+			<span class="contentInfo">Helps the driver to park using sensors and cameras</span>
+		</div> <div class="price"> &euro; 217.84 </div>
+	<br/>
+	
+	<input type="checkbox" name="upgrade" id="sunroof" onclick="sunroof()">
+		<div class="content">Panoramic Sunroof
+			<span class="contentInfo">Spoiler Roof</span>
+		</div> <div class="price"> &euro; 1278.99 </div>
+	<br/>
+	
+	<input type="checkbox" name="upgrade" id="chassisControl" onclick="chassisControl()">
+		<div class="content">Adaptive Chassis Control (ACC)
+			<span class="contentInfo">Driving Profile Selection and hydraulic damper control</span>
+		</div> <div class="price"> &euro; 1151.18 </div>
+	<br/>
+	
+	<h1> Extras</h1>
+	<input type="checkbox" name="extra" id="alloyWheels" onclick="alloyWheels()"> Santiago 19" alloy wheels <div class="price"> &euro; 747.63 </div>
+	<br/>
+	<input type="checkbox" name="extra" id="soundSystem" onclick="soundSystem()"> "Dynaudio Excite" Sound system (400 Watt) <div class="price"> &euro; 807.36 </div>
+	<br/>
+	<input type="checkbox" name="extra" id="appConnect" onclick="appConnect()"> App Connect <div class="price"> &euro; 299 </div>
+	<br/>
+
+	<h1 id="Shipping"> Shipping Details</h1>
+	<form>
+		<div id="wrapper">
+			<div class="col1">
+				E-mail:<br>
+				<input type="text" id="e-mail"><br>
+				First name:<br>
+				<input type="text" id="firstname"><br>
+				Last name:<br>
+				<input type="text" id="lastname"><br>
+				Address:<br>
+				<input type="text" id="address"><br>
+				County:<br>
+				<select class="countyList" id ="county">
+					<option value="Antrim">Antrim</option>
+					<option value="Armagh">Armagh</option>
+					<option value="Carlow">Carlow</option>
+					<option value="Cavan">Cavan</option>
+					<option value="Clare">Clare</option>
+					<option value="Cork">Cork</option>
+					<option value="Derry">Derry</option>
+					<option value="Donegal">Donegal</option>
+					<option value="Down">Down</option>
+					<option value="Dublin">Dublin</option>
+					<option value="Fermanagh">Fermanagh</option>
+					<option value="Galway">Galway</option>
+					<option value="Kerry">Kerry</option>
+					<option value="Kildare">Kildare</option>
+					<option value="Kilkenny">Kilkenny</option>
+					<option value="Laois">Laois</option>
+					<option value="Leitrim">Leitrim</option>
+					<option value="Limerick">Limerick</option>
+					<option value="Longford">Longford</option>
+					<option value="Louth">Louth</option>
+					<option value="Mayo">Mayo</option>
+					<option value="Meath">Meath</option>
+					<option value="Monaghan">Monaghan</option>
+					<option value="Offaly">Offaly</option>
+					<option value="Roscommon">Roscommon</option>
+					<option value="Sligo">Sligo</option>
+					<option value="Tipperary">Tipperary</option>
+					<option value="Tyrone">Tyrone</option>
+					<option value="Waterford">Waterford</option>
+					<option value="Westmeath">Westmeath</option>
+					<option value="Wexford">Wexford</option>
+					<option value="Wicklow">Wicklow</option>
+					
+				</select>
+				<br>
+				Country:<br>
+				<input type="text" id="country"><br>
+			</div>
+		
+			<div class="col2">
+				Cards Accepted:<br>
+				<img src="img/Credit-Cards.png" title="Credit Cards" alt="Credit Cards" height="15px"><br>
+				Card Holder:<br>
+				<input type="text" id="cardHolder"><br>
+				Card Type:<br>
+				<select class="cardType" id="cardType">
+					<option value="Visa">Visa</option>
+					<option value="V Pay">V Pay</option>
+					<option value="Master Card">Master Card</option>
+					<option value="American Express">American Express</option>
+				</select>
+				<br>
+				Card Number:<br>
+				<input type="text" id="cardNumber"><br>
+				Expiry Date:<br>
+				<select class="month" id ="month">
+					<option value="selectMonth">MM</option>
+					<option value="January">01</option>
+					<option value="February">02</option>
+					<option value="March">03</option>
+					<option value="April">04</option>
+					<option value="May">05</option>
+					<option value="June">06</option>
+					<option value="July">07</option>
+					<option value="August">08</option>
+					<option value="September">09</option>
+					<option value="October">10</option>
+					<option value="November">11</option>
+					<option value="December">12</option>
+				</select>
+				<select class="year" id="year">
+					<option value="selectYear">YY</option>
+					<option value="2016">16</option>
+					<option value="2017">17</option>
+					<option value="2018">18</option>
+					<option value="2019">19</option>
+					<option value="2020">20</option>
+					<option value="2021">21</option>
+					<option value="2022">22</option>
+					<option value="2023">23</option>
+					<option value="2024">24</option>
+					<option value="2025">25</option>
+					<option value="2026">26</option>
+					<option value="2027">27</option>
+				</select>
+				<br>
+				CV2 Number:<br>
+				<input type="text" id="cv2Number"><br>
+			</div>
+		</div>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<br><br>
+		<div class="BuyNow">
+			<input type="button" value="Buy Now" onclick="buyNow()">
+		</div>
+	</form>
+	
+	<div id="display"></div>
+
+	
+	</main>	
+	
+	<footer class="footer">
+		<p id="footerLeft">Rossa Ave, Bishopstown, Co. Cork</p>
+		<p id="footerRight">Tel: <a class="contactLinks" href="tel:+353863029432">0863029432</a>
+		 E-mail: <a class="contactLinks" href="mailto:support@volkswagen.com">support@volkswagen.com</a></p>
+	</footer>
+	
+	
+	</body>
+</html>
